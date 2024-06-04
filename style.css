@@ -62,6 +62,16 @@ body{
         justify-content: center;
     }
 
+    button:hover{
+        background: rgb(47, 0, 255);
+        transition: linear 0.5s;
+
+        i{
+            color: white;
+            transition: linear 0.5s;
+        }
+    }
+
     i{
         font-size: 35px;
         opacity: 1;
