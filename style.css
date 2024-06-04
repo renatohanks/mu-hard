@@ -114,6 +114,11 @@ body{
     padding-bottom: 10px;
     color: white;
     border-radius: 10px 10px 0 0;
+
+    hr{
+        position: relative;
+        width: 285px;
+    }
 }
 
 .information{
@@ -138,12 +143,14 @@ body{
         h2{
             text-align: center;
             font: normal 20pt var(--font);
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
         
         hr{
             position: relative;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            width: 300px;
+            left: 19px;
         }
     }
 
