@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --font: "Poppins", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background: grey;
+}
+
+#painel{
+    background: rgb(3, 3, 3);
+    margin: 8px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -8px;
+    height: 540px;
+    gap: 10px;
+    border-radius: 0 0 10px 10px;
+    
+
+    & h2{
+        color: #ffffff;
+        font: bold 11pt var(--font);
+        position: relative;
+
+    }
+
+    & .visual{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button{
+        width: 80px;
+        height: 70px;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    i{
+        font-size: 35px;
+    }
+}
+
+.account{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    left: -30px;
+    color: white;
+    top: 30px;
+    font: normal 8pt var(--font);
+}
+
+.logout{
+    position: absolute;
+    left: 10px;
+    bottom: 672px;
+
+    & .logouttext{
+        z-index: 10;
+        background: rgb(95, 95, 189);
+        padding: 6px 15px;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        left: 25px;
+        top: -95px;
+        color: white;
+        gap: 5px;
+        font: normal 10pt var(--font);
+    }
+}
+
+.title{
+    color: rgb(87, 82, 82);
+    position: relative;
+    padding-left: 20px;
+    text-align: start;
+    font: bold 25pt var(--font);
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(3, 3, 3);
+    margin: 8px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.information{
+    background: rgb(0, 0, 0);
+    margin: 8px;
+    height: 390px;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    grid-template-columns: 1fr;
+    position: relative;
+    border-radius: 10px;
+
+
+    & .info{
+        font: normal 8pt var(--font);
+        padding: 1px;
+        position: relative;
+        top: -30px;
+        top: -15px;
+
+        h2{
+            text-align: center;
+            font: normal 20pt var(--font);
+            margin-bottom: 10px;
+        }
+        
+        hr{
+            position: relative;
+            margin-bottom: 15px;
+        }
+    }
+
+    .login{
+        color: white;
+        background: grey;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        position: relative;
+        top: -40px;
+
+        h3{
+            position: relative;
+            top: 4px;
+            font: normal 10pt var(--font);
+        }
+    }
+
+    .whatsapp{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        position: relative;
+        top: -60px;
+
+        h3{
+            position: relative;
+            top: 4px;
+            font: normal 10pt var(--font);
+        }
+    }
+
+    .criacao{
+        background: grey;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        position: relative;
+        top: -80px;
+
+        h3{
+            position: relative;
+            left: -5px;
+            top: 1px;
+            font: normal 10pt var(--font);
+        }
+    }
+
+    .password{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        position: relative;
+        top: -100px;
+    }
+
+    .email{
+        background: grey;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        position: relative;
+        top: -120px;
+
+        h3{
+            position: relative;
+            left: 40px;
+            top: 3px;
+            font: normal 10pt var(--font);
+        }
+    }
+
+}
+
+.footer{
+    background: black;
+    margin-top: 20px;
+    padding: 8px 0 8px 0;
+}
+
