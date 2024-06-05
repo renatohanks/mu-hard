@@ -97,7 +97,7 @@ body{
 }
 
 .logout{
-    position: absolute;
+    position: relative;
     left: 10px;
     bottom: 672px;
 
