@@ -29,7 +29,7 @@
         <div class="whatsapp">
             <h2 style="color: white;">Whatsapp</h2>
             <h3 style="color: white; position: relative; left: 45px;">81 98606-8744</h3>
-            <button type="button" style="width: 30px;"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button>
+            <button type="button" style="width: 30px; cursor: pointer;" onclick="abrirModal2()"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button>
         </div>
         <div class="criacao">
             <h2>Data de criação</h2>
@@ -37,17 +37,53 @@
         </div>
         <div class="password">
             <h2>Senha</h2>
-            <h2 class="pass">****** <button type="button" style="width: 30px; padding: 3px 0;"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button></h2>
+            <h2 class="pass">****** <button onclick="abrirModal()" type="button" style="width: 30px; padding: 3px 0; cursor: pointer;"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button></h2>
         </div>
         <div class="email">
             <h2>Email</h2>
             <h3>drake2019@gmail.com</h3>
-            <button type="button" style="width: 30px; padding: 3px 0;"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button>
+            <button type="button" style="width: 30px; padding: 3px 0; cursor: pointer;" onclick="abrirModal3()"><i class="fa-regular fa-pen-to-square" style="color: #000000;"></i></button>
+        </div>
+    </div>
+    <div class="janela-modal3" id="janela-modal3">
+        <div class="modal3">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Aterar E-mail:</h1>
+            <p>Digite o novo email:</p>
+            <input class="password-atual" type="email">
+            <i id="solicitar" class="fa-solid fa-paper-plane" style="color: var(--cormain);"></i>
+            <p class="code">Confirmar Código:</p>
+            <input class="password-nova" type="email">
+            <button class="confirm" type="submit">Confirmar</button>
+        </div>
+    </div>
+    <div class="janela-modal2" id="janela-modal2">
+        <div class="modal2">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Whatsapp:</h1>
+            <p>Digite o novo número:</p>
+            <input class="password-atual" type="number">
+            <i id="solicitar" class="fa-solid fa-paper-plane" style="color: var(--cormain);"></i>
+            <p class="code">Confirmar Código:</p>
+            <input class="password-nova" type="number">
+            <button class="confirm" type="submit">Confirmar</button>
+        </div>
+    </div>
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Alterar Senha:</h1>
+            <p>Digite sua senha atual:</p>
+            <input class="password-atual" type="password">
+            <p>Digite sua nova senha:</p>
+            <input class="password-nova" type="password">
+            <button class="confirm" type="submit">Confirmar</button>
         </div>
     </div>
     <div class="footer">
         <p style="color: white; text-align: center; font: normal 12pt Arial; padding-bottom: 10px;">2024 MuHard | Todos os Direitos Reservados.</p>
     </div>
     <script src="https://kit.fontawesome.com/76c4e46cd9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
