@@ -11,9 +11,7 @@
 }
 
 html, body{
-    width: 100%;
-    box-sizing: border-box;
-    
+    width: 100%;    
 }
 
 body{
@@ -31,7 +29,7 @@ body{
     padding: 30px;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    top: -8px;
+    top: -49px;
     height: 540px;
     gap: 10px;
     border-radius: 0 0 10px 10px;
@@ -41,6 +39,7 @@ body{
         color: #ffffff;
         font: bold 11pt var(--font);
         position: relative;
+        top: -8px;
 
     }
 
@@ -97,9 +96,10 @@ body{
 }
 
 .logout{
-    position: absolute;
-    left: 10px;
-    bottom: 622px;
+    display: flex;
+    position: relative;
+    top: -20px;
+    
 
     & .logouttext{
         z-index: 10;
@@ -113,6 +113,7 @@ body{
         color: rgb(0, 0, 0);
         gap: 5px;
         font: normal 10pt var(--font);
+        cursor: pointer;
     }
 }
 
@@ -131,6 +132,7 @@ body{
     color: white;
     border-radius: 10px 10px 0 0;
 
+
     hr{
         position: relative;
         width: 285px;
@@ -147,7 +149,7 @@ body{
     grid-template-columns: 1fr;
     position: relative;
     border-radius: 10px;
-    top: 0px;
+    top: -32px;
     height: 500px;
     padding-top: 90px;
 
@@ -273,7 +275,7 @@ body{
     grid-template-columns: 1fr;
     position: relative;
     border-radius: 10px;
-    top: 0px;
+    top: -33px;
     height: 500px;
     padding-top: 90px;
 
