@@ -99,7 +99,7 @@ body{
 .logout{
     position: absolute;
     left: 10px;
-    bottom: 652px;
+    bottom: 622px;
 
     & .logouttext{
         z-index: 10;
