@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root{
     --font: "Poppins", sans-serif;
+    --cormain: rgb(95, 95, 189);
 }
 
 *{
@@ -10,8 +11,11 @@
 }
 
 html, body{
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    
+    
 }
 
 body{
@@ -91,6 +95,7 @@ body{
     color: white;
     top: 30px;
     font: normal 10pt var(--font);
+    z-index: 1;
 }
 
 .logout{
@@ -145,7 +150,6 @@ body{
     position: relative;
     border-radius: 10px;
     top: 0px;
-    z-index: -1;
     height: 500px;
     padding-top: 90px;
 
@@ -256,7 +260,69 @@ body{
             font: normal 10pt var(--font);
         }
     }
+}
 
+.painelcode{
+    background: rgb(0, 0, 0); opacity: 0.9;
+    margin: 8px;
+    height: 390px;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    grid-template-columns: 1fr;
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    height: 500px;
+    padding-top: 90px;
+
+    & .gift{
+        font: normal 8pt var(--font);
+        padding: 1px;
+        position: relative;
+        top: -30px;
+        top: -15px;
+
+        h2{
+            text-align: center;
+            font: normal 20pt var(--font);
+            margin-bottom: 6px;
+        }
+        
+        hr{
+            position: relative;
+            margin-bottom: 12px;
+            width: 150px;
+            left: 93px;
+        }
+    }
+
+    .listacode{
+        background: rgb(95, 95, 189);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        font: normal 8pt var(--font);
+        padding: 10px;
+        height: 45px;
+        position: relative;
+        top: -80px;
+        border-radius: 8px;
+        margin: -7px;
+        left: 6px;
+
+        h3{
+            position: relative;
+            display: flex;
+            align-items: center;
+            font: normal 15pt var(--font);
+        }
+
+        button{
+            cursor: pointer;
+        }
+    }
 }
 
 .footer{
@@ -267,4 +333,331 @@ body{
     position: fixed;
     bottom: 0;
     
+}
+
+.janela-modal{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+    top: -400px;
+
+    h1{
+        font: bold 27pt var(--font);
+        position: relative;
+        top: -20px;
+    }
+
+    p{
+        font: normal 13pt var(--font);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .modal{
+        width: 90%;
+        height: 310px;
+        background-color: rgba(255, 255, 255, 0.507);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .password-atual{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .password-nova{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .confirm{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        top: 5px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgb(95, 95, 189);
+        color: white;
+        font: normal 12pt var(--font);
+        box-shadow: 1px 1px 7px 1px black;
+        cursor: pointer;
+    }
+
+    .confirm:hover{
+        background-color: white;
+        color: rgb(95, 95, 189);
+    }
+    .fechar{
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-color: rgb(95, 95, 189);
+        color: white;
+    }
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
+
+.janela-modal2{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+    top: -400px;
+
+    h1{
+        font: bold 27pt var(--font);
+        position: relative;
+        top: -20px;
+    }
+
+    p{
+        font: normal 13pt var(--font);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .modal2{
+        width: 90%;
+        height: 310px;
+        background-color: rgba(255, 255, 255, 0.507);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .password-atual{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .password-nova{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .confirm{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        top: 5px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgb(95, 95, 189);
+        color: white;
+        font: normal 12pt var(--font);
+        box-shadow: 1px 1px 7px 1px black;
+        cursor: pointer;
+    }
+
+    .confirm:hover{
+        background-color: white;
+        color: rgb(95, 95, 189);
+    }
+    .fechar{
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-color: rgb(95, 95, 189);
+        color: white;
+    }
+
+    #solicitar{
+        position: relative;
+        top: -44px;
+        left: 265px;
+        cursor: pointer;
+    }
+}
+
+.janela-modal2.abrir{
+    display: flex;
+}
+
+.janela-modal3{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+    top: -400px;
+
+    h1{
+        font: bold 27pt var(--font);
+        position: relative;
+        top: -20px;
+    }
+
+    p{
+        font: normal 13pt var(--font);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .modal3{
+        width: 90%;
+        height: 310px;
+        background-color: rgba(255, 255, 255, 0.507);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .password-atual{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .password-nova{
+        position: relative;
+        width: 290px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        outline: 0;
+        top: -20px;
+    }
+
+    .confirm{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        top: 5px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgb(95, 95, 189);
+        color: white;
+        font: normal 12pt var(--font);
+        box-shadow: 1px 1px 7px 1px black;
+        cursor: pointer;
+    }
+
+    .confirm:hover{
+        background-color: white;
+        color: rgb(95, 95, 189);
+    }
+    .fechar{
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-color: rgb(95, 95, 189);
+        color: white;
+    }
+
+    #solicitar{
+        position: relative;
+        top: -44px;
+        left: 265px;
+        cursor: pointer;
+    }
+}
+
+.janela-modal3.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
+
+.abrir .modal2{
+    animation: abrirmodal 0.5s;
 }
